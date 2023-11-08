@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  --colorPrincipal:rgb(32, 29, 29);
+  --colorSecundario:rgb(170, 163, 163);
+  --colorFondo:rgb(219, 202, 202);
+  --colorInputs:rgb(242, 235, 235);
+}
+header{
+  height: 8vh;
+  text-align: center;
+  color:var(--colorFondo);
+  background-color: var(--colorPrincipal);
+}
+main{
+  min-height: 85vh;
+  background-color: var(--colorFondo);
+}
+footer{
+  height: 7vh;
+  text-align: center;
+  color:var(--colorFondo);
+  background-color: var(--colorPrincipal);
+}
+#contenedorPrincipal{
+  margin: 1vh auto;
+  background-color: var(--colorFondo);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+#tituloPrincipal{
+  margin: 4vh auto 2vh;
+  width: 100%;
+  text-align: center;
+}
+#tituloPrincipal h2{
+  font-size: 1.5rem;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: var(--colorInputs);
+  border: solid black 2px;
+  border-radius: 1rem;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 7em;
+}
+.container p{
+  padding: 10px;
+  font-size: 1.5rem;
+  overflow-wrap: break-word;
+  overflow-y: auto;
+  
+}
+.container button{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 15px;
+  z-index: 1;
+  padding: 5px 10px;
+  font-size: 1rem;
+  background-color: var(--colorSecundario);
+  border: none;
+  border-radius: 1rem;
+  
+}
+#notasContainer{
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+
+#inputContainer{
+  width: 90%;
+  margin: 0 auto;
+  height: 7em;
+}
+#inputContainer textarea{
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  border: solid black 2px;
+  background-color: var(--colorInputs);
+  text-align:start;
+  overflow: auto;
+  text-wrap: wrap;
+  font-size: 1.5rem;
+}
+#contenedorSecundario{
+  display: flex;
+  flex-direction: column;
+}
+#botonCrear{
+  width: 90%;
+  margin: 10px auto;
+  background-color:var(--colorPrincipal);
+  color: var(--colorFondo);
+  font-size: larger;
+  padding: 10px;
+  border-radius: 1rem;
+}
